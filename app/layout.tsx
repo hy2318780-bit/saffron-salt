@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Saffron & Salt — Modern Indian Kitchen, Bandra',
-  description: 'Regional Indian cooking reworked on a charcoal grill in Bandra West, Mumbai. Reserve your table at Saffron & Salt.',
+  description: 'Explore the Saffron & Salt digital menu, order fresh regional Indian favourites for pickup, or reserve a table in Bandra West, Mumbai.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -26,11 +26,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#f5f2eb',
 }
 
 export default function RootLayout({
