@@ -172,3 +172,147 @@ a:hover {
     animation-iteration-count: 1 !important;
   }
 }
+
+.hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(63, 104, 79, 0.16);
+  border-radius: 999px;
+  padding: 8px 13px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.open-note {
+  width: fit-content;
+  border: 1px solid rgba(63, 104, 79, 0.16);
+  border-radius: 999px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.hero-art {
+  animation: hero-float 8s ease-in-out infinite alternate;
+}
+
+@keyframes hero-float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-7px); }
+}
+
+.spice-card {
+  border: 1px solid rgba(63, 104, 79, 0.1);
+  border-radius: 22px;
+}
+
+.button,
+.nav-links .nav-cta,
+.outline-button {
+  border-radius: 14px;
+}
+
+.nav-links .nav-cta {
+  border-radius: 999px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea,
+input,
+select,
+textarea {
+  border-radius: 12px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.tab {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--muted);
+}
+
+.tab.active {
+  border-color: var(--green);
+  background: var(--green);
+  color: var(--white);
+  box-shadow: 0 6px 16px rgba(34, 58, 48, 0.12);
+}
+
+.add-button {
+  border-radius: 999px;
+  padding: 9px 15px;
+  background: #f7f6ef;
+}
+
+.add-button:hover {
+  background: #f1e5c9;
+}
+
+.quantity-control {
+  border-radius: 999px;
+  padding: 4px 7px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.cart-card,
+.order-confirmation,
+.booking-card,
+.hours-card {
+  border-radius: 22px;
+}
+
+.dish {
+  border: 1px solid transparent;
+  border-radius: 18px;
+  padding-inline: 14px;
+  margin-inline: -14px;
+}
+
+.dish:hover {
+  border-color: rgba(63, 104, 79, 0.1);
+  box-shadow: 0 9px 24px rgba(31, 56, 42, 0.06);
+  transform: translateY(-1px);
+}
+
+.button,
+.nav-links .nav-cta,
+.tab,
+.add-button,
+.outline-button,
+.quantity-control button,
+.dish,
+.cart-card,
+.booking-card,
+.hours-card,
+.spice-card {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-art {
+    animation: none;
+  }
+}
+
+.order-heading h2 {
+  font: 500 clamp(38px, 4.8vw, 60px) / 0.98 'Playfair Display', serif;
+  letter-spacing: -0.055em;
+  margin: 0;
+}
